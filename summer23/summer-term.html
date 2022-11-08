@@ -1,0 +1,409 @@
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta charset="utf-8" >
+<!--<link rel="stylesheet" href="style.css">-->
+<style>
+body {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+    min-height: 100vh;
+    padding: 4rem 0;
+    width: 100%
+    font-family: -system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+div.content {
+    width: 960px;
+    margin: auto;
+    font-family: -system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+table {
+    width: 100%;
+    max-width: 100rem; 
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    font-size: 1.4rem
+  }
+
+  h2 {
+      font-size: 1.2rem;
+  }
+
+.title-cell {
+    width: 70%;
+}
+
+th {
+    text-align: left;
+    border-bottom: 1px lightgray solid;
+    background-color: lightgray;
+}
+
+th, td {
+    padding: 2 2 2 2;
+    /* border-bottom: 1px lightgray solid; */
+}
+
+table.modultable tr:nth-child(even) {background: rgb(237, 237, 237)}
+table.modultable tr:nth-child(odd) {background: #FFF}
+
+caption {
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding-left: 2;
+    padding-bottom: 0.2rem;
+    text-align: center;
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+
+}
+
+.m4 {background-color: #FF8A65;
+}
+.m5 {background-color: #FFA726;
+}
+.m6 {background-color: #9CCC65;
+}
+.m8 {background-color: #B3E5FC;
+}
+.mc {background-color: #fd6998;
+}
+
+
+
+
+
+
+div.timetable {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  
+div.timetable  table {
+    width: 100%;
+    table-layout:auto;
+    max-width: 100rem; 
+    border: 1px solid lightgrey;
+    border-collapse: separate;
+    font-size: 0.6rem;
+
+  }
+    
+  div.timetable th, div.timetable td {
+  padding: 0.3rem 0.3rem;
+  }
+  
+  div.timetable  th {
+  font-weight: normal;
+  /* border-top: thin dotted #ccc; */
+  }
+  
+  div.timetable  td {
+  font-weight:600;
+  line-height: 1.4;
+  border-radius: 0rem;
+  transition: opacity 0.3s ease;
+  border: 0;
+  }
+  
+  div.timetable td > span {
+  font-size: 0.5rem;
+  font-weight: normal;
+  display: block;
+  width: 100%;
+  }
+  
+  
+  div.timetable  th {
+      /* border-top: 1px solid black; */
+      /* border-bottom: 1px solid black; */
+      background-color: lightgrey;
+      text-align: center;
+  }
+  
+  
+  div.timetable .m4 {background-color: #FF8A65;
+      /* border: 1px solid black; */
+      border-radius: 0.2rem;
+  }
+  div.timetable .m5 {background-color: #FFA726;
+      /* border: 1px solid black; */
+      border-radius: 0.2rem;
+  }
+  div.timetable .m6 {background-color: #9CCC65;
+      /* border: 1px solid black; */
+      border-radius: 0.2rem;
+  }
+  div.timetable .m8 {background-color: #B3E5FC;
+      /* border: 1px solid black; */
+      border-radius: 0.2rem;
+  }
+  div.timetable .colloquium {background-color: #fd6998;
+      /* border: 1px solid black; */
+      border-radius: 0.2rem;
+  }
+  
+  div.timetable  caption {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      text-align: left;
+      border: none
+  }
+
+
+/* div.timetable table tr:nth-child(even) {background: rgb(237, 237, 237)}
+div.timetable table tr:nth-child(odd) {background: #FFF} */
+
+
+@page {
+    size: A4 landscape;
+    margin: 1cm;
+}
+
+
+</style>
+<!--End of Style sheet-->
+<body>
+<div class="content">
+<h1>Lehrplanung Sommersemester 2023 (Version 1)<h1>
+<h2>Semester 2</h2>
+<table class="modultable">
+<caption class="m4">Module 4: Social Structure and Inequalities in European Societies</caption>
+<thead><tr>
+<th>Title</th>
+<th>Lecturer</th>
+<th>Day</th>
+<th>Time</th>
+</tr></thead><tr><td class='title-cell'>Regional Inequalities</td><td>Liebig</td><td>Mon</td><td>12-14</td></tr><tr><td class='title-cell'>Discrimination: Theories, Measurement, and Empirical Applications</td><td>Pietrantuono</td><td>Mon</td><td>12-14</td></tr><tr><td class='title-cell'>Migration and integration policies in Europe</td><td>Teney</td><td>Mon</td><td>16-18</td></tr><tr><td class='title-cell'>(Mod?) Social Capital, Trust, and Networks</td><td>Kostiuchenko</td><td>Tue</td><td>12-14</td></tr><tr><td class='title-cell'>Social Structures and Inequalities in Comparative Perspective: Using Data Infrastructures of Comparative Empirical Social Research</td><td>Liebig</td><td>Tue</td><td>12-14</td></tr><tr><td class='title-cell'>LECTURE Social Structure of European Societies</td><td>Heisig</td><td>Wed</td><td>10-12</td></tr><tr><td class='title-cell'>School-to-work transition across the world</td><td>Solga</td><td>Wed</td><td>16-18</td></tr><tr><td class='title-cell'>Lifelong Learning and Social Inequality</td><td>Ehlert</td><td>Thu</td><td>10-12</td></tr></table><table class="modultable">
+<caption class="m5">Module 5: Values and Culture from a European Comparative Perspective</caption>
+<thead><tr>
+<th>Title</th>
+<th>Lecturer</th>
+<th>Day</th>
+<th>Time</th>
+</tr></thead><tr><td class='title-cell'>LECTURE Cultural Differences and Similarities between the Member States of the European Union</td><td>Teney</td><td>Mon</td><td>10-12</td></tr><tr><td class='title-cell'>Cleavage Politics and Group Appeals   </td><td>Borbáth</td><td>Mon</td><td>14-16</td></tr><tr><td class='title-cell'>Empirical Social Justice Research</td><td>Liebig</td><td>Mon</td><td>14-16</td></tr><tr><td class='title-cell'>The Sociology of Values: Comparative Perspectives</td><td>von Scheve</td><td>Tue</td><td>10-12</td></tr><tr><td class='title-cell'>Culture & Values TBD</td><td>Wunderlich</td><td>Tue</td><td>10-12</td></tr><tr><td class='title-cell'>(Mod?) Sociology of Social Problems</td><td>Varga</td><td>Wed</td><td>12-14</td></tr><tr><td class='title-cell'>(Mod?) Guilt, Debt and Social Subjugation</td><td>Hepp</td><td>Wed</td><td>12-14</td></tr><tr><td class='title-cell'>Religiosity in European Societies</td><td>Ohr</td><td>Wed</td><td>12-14</td></tr><tr><td class='title-cell'>Collective Identity: From Cognition to Culture</td><td>von Scheve</td><td>Wed</td><td>14-16</td></tr></table><table class="modultable">
+<caption class="m6">Module 6: Globalization and Regional Development</caption>
+<thead><tr>
+<th>Title</th>
+<th>Lecturer</th>
+<th>Day</th>
+<th>Time</th>
+</tr></thead><tr><td class='title-cell'>Power Elites in Eastern Europe</td><td>Kostiuchenko</td><td>Mon</td><td>10-12</td></tr><tr><td class='title-cell'>TBC Globalization and Social Inequality</td><td>Gerhards</td><td>Mon</td><td>18-20</td></tr><tr><td class='title-cell'>LECTURE Sociology of Entanglements: Global and Regional Transformations</td><td>Costa</td><td>Tue</td><td>14-16</td></tr><tr><td class='title-cell'>Causes and Consequences of (Forced) Migration</td><td>Pietrantuono</td><td>Tue</td><td>16-18</td></tr><tr><td class='title-cell'>Sociology of the European Union</td><td>Teney</td><td>Tue</td><td>16-18</td></tr><tr><td class='title-cell'>Psychoanalyse in Lateinamerika: Soziologische Erkundungsgänge einer Disziplin und ihrer Anwendungen</td><td>Sauer</td><td>Wed</td><td>10-12</td></tr><tr><td class='title-cell'>Civil Society and War in Eastern Europe</td><td>Varga</td><td>Wed</td><td>10-12</td></tr></table><p> </p>
+<h2 style="page-break-before:auto">Semester 4</h2>
+<table class="modultable">
+<caption  class="m8">Module 8: Specialisation</caption>
+<thead><tr>
+<th>Title</th>
+<th>Lecturer</th>
+<th>Day</th>
+<th>Time</th>
+</tr></thead><tr><td class='title-cell'>(Mod?) Questionnaire and Survey Design in Studying Corruption</td><td>Kostiuchenko</td><td>Tue</td><td>10-12</td></tr><tr><td class='title-cell'>New Developments in Rational Choice Theory</td><td>Liebig</td><td>Tue</td><td>10-12</td></tr><tr><td class='title-cell'>Qualitative analysis of experiences of displaced migrants in Europe</td><td>Teney</td><td>Tue</td><td>10-12</td></tr><tr><td class='title-cell'>Sociology of the Arts </td><td>von Scheve</td><td>Tue</td><td>14-16</td></tr><tr><td class='title-cell'>Sociology of Conspiracy Theories</td><td>Wunderlich</td><td>Tue</td><td>14-16</td></tr><tr><td class='title-cell'>Geschichte der empirischen Sozialforschung im internationalen Vergleich zwischen Deutschland und den USA</td><td>Gorges</td><td>Thu</td><td>12-14</td></tr><tr><td class='title-cell'>Climate Sociology</td><td>Kohl</td><td>Fri</td><td>12-14</td></tr><tr><td class='title-cell'>(Mod?) Race (tbc)</td><td>Lukate</td><td>nan</td><td>8-16</td></tr><tr><td class='title-cell'>Introduction to Social Sciences Methods: Statistics, text mining and WebScraping in R</td><td>Heinrich</td><td>nan</td><td>8-16</td></tr></table><table class="modultable">
+<caption  class="mc">Colloquia</caption>
+<thead><tr>
+<th>Title</th>
+<th>Lecturer</th>
+<th>Day</th>
+<th>Time</th>
+</tr></thead> <tr><td class='title-cell'>Master Colloquium</td><td>Teney</td><td>Mon</td><td>14-16</td></tr><tr><td class='title-cell'>Social Structure & Survey-Methodology</td><td>Liebig</td><td>Mon</td><td>16-18</td></tr><tr><td class='title-cell'>MA-Colloquium Sociology</td><td>Kohl</td><td>Tue</td><td>16-18</td></tr><tr><td class='title-cell'>Research Colloquium Social Science</td><td>Kohl</td><td>Tue</td><td>18-20</td></tr><tr><td class='title-cell'>Colloquium</td><td>Ohr</td><td>Tue</td><td>18-20</td></tr><tr><td class='title-cell'>Colloquium</td><td>von Scheve</td><td>Wed</td><td>16-18</td></tr></table><p> </p>
+<p> </p>
+<div class="timetable">
+<table style="page-break-before:auto">
+<caption>Semester 2</caption>
+<thead style="font-weight: bold;">
+<tr>
+<th><strong>Time</strong></th><th colspan="2"><strong>Mon</strong></th><th colspan="2"><strong>Tue</strong></th><th colspan="6"><strong>Wed</strong></th><th colspan="1"><strong>Thu</strong></th><th colspan="nan"><strong>Fri</strong></th><tr>
+<th>10:00</th>
+          <td colspan="1.0" rowspan="4" class="M6" > Power Elites in Eastern Europe <span>Kostiuchenko</span></td>
+          
+          <td colspan="1.0" rowspan="4" class="M5" > LECTURE Cultural Differences and Similarities between the Member States of the European Union <span>Teney</span></td>
+          
+          <td colspan="1.0" rowspan="4" class="M5" > The Sociology of Values: Comparative Perspectives <span>von Scheve</span></td>
+          
+          <td colspan="1.0" rowspan="4" class="M5" > Culture & Values TBD <span>Wunderlich</span></td>
+          
+          <td colspan="2.0" rowspan="4" class="M6" > Psychoanalyse in Lateinamerika: Soziologische Erkundungsgänge einer Disziplin und ihrer Anwendungen <span>Sauer</span></td>
+          
+          <td colspan="2.0" rowspan="4" class="M6" > Civil Society and War in Eastern Europe <span>Varga</span></td>
+          
+          <td colspan="2.0" rowspan="4" class="M4" > LECTURE Social Structure of European Societies <span>Heisig</span></td>
+          
+          <td colspan="1.0" rowspan="4" class="M4" > Lifelong Learning and Social Inequality <span>Ehlert</span></td>
+          </tr>
+<tr>
+<th>10:30</th>
+</tr>
+<tr>
+<th>11:00</th>
+</tr>
+<tr>
+<th>11:30</th>
+</tr>
+<tr>
+<th>12:00</th>
+          <td colspan="1.0" rowspan="4" class="M4" > Regional Inequalities <span>Liebig</span></td>
+          
+          <td colspan="1.0" rowspan="4" class="M4" > Discrimination: Theories, Measurement, and Empirical Applications <span>Pietrantuono</span></td>
+          
+          <td colspan="1.0" rowspan="4" class="M4" > (Mod?) Social Capital, Trust, and Networks <span>Kostiuchenko</span></td>
+          
+          <td colspan="1.0" rowspan="4" class="M4" > Social Structures and Inequalities in Comparative Perspective: Using Data Infrastructures of Comparative Empirical Social Research <span>Liebig</span></td>
+          
+          <td colspan="2.0" rowspan="4" class="M5" > (Mod?) Sociology of Social Problems <span>Varga</span></td>
+          
+          <td colspan="2.0" rowspan="4" class="M5" > (Mod?) Guilt, Debt and Social Subjugation <span>Hepp</span></td>
+          
+          <td colspan="2.0" rowspan="4" class="M5" > Religiosity in European Societies <span>Ohr</span></td>
+          <td colspan="1"></td></tr>
+<tr>
+<th>12:30</th>
+</tr>
+<tr>
+<th>13:00</th>
+</tr>
+<tr>
+<th>13:30</th>
+</tr>
+<tr>
+<th>14:00</th>
+          <td colspan="1.0" rowspan="4" class="M5" > Cleavage Politics and Group Appeals    <span>Borbáth</span></td>
+          
+          <td colspan="1.0" rowspan="4" class="M5" > Empirical Social Justice Research <span>Liebig</span></td>
+          
+          <td colspan="2.0" rowspan="4" class="M6" > LECTURE Sociology of Entanglements: Global and Regional Transformations <span>Costa</span></td>
+          
+          <td colspan="6.0" rowspan="4" class="M5" > Collective Identity: From Cognition to Culture <span>von Scheve</span></td>
+          <td colspan="1"></td></tr>
+<tr>
+<th>14:30</th>
+</tr>
+<tr>
+<th>15:00</th>
+</tr>
+<tr>
+<th>15:30</th>
+</tr>
+<tr>
+<th>16:00</th>
+          <td colspan="2.0" rowspan="4" class="M4" > Migration and integration policies in Europe <span>Teney</span></td>
+          
+          <td colspan="1.0" rowspan="4" class="M6" > Causes and Consequences of (Forced) Migration <span>Pietrantuono</span></td>
+          
+          <td colspan="1.0" rowspan="4" class="M6" > Sociology of the European Union <span>Teney</span></td>
+          
+          <td colspan="6.0" rowspan="4" class="M4" > School-to-work transition across the world <span>Solga</span></td>
+          <td colspan="1"></td></tr>
+<tr>
+<th>16:30</th>
+</tr>
+<tr>
+<th>17:00</th>
+</tr>
+<tr>
+<th>17:30</th>
+</tr>
+<tr>
+<th>18:00</th>
+          <td colspan="2.0" rowspan="4" class="M6" > TBC Globalization and Social Inequality <span>Gerhards</span></td>
+          <td colspan="2"></td><td colspan="6"></td><td colspan="1"></td></tr>
+<tr>
+<th>18:30</th>
+</tr>
+<tr>
+<th>19:00</th>
+</tr>
+<tr>
+<th>19:30</th>
+</tr></table><p></p><table style="page-break-before:auto">
+<caption>Semester 4</caption>
+<thead style="font-weight: bold;">
+<tr>
+<th><strong>Time</strong></th><th colspan="1"><strong>Mon</strong></th><th colspan="6"><strong>Tue</strong></th><th colspan="1"><strong>Wed</strong></th><th colspan="1"><strong>Thu</strong></th><th colspan="1"><strong>Fri</strong></th>
+     <tr>
+     <th>10:00</th>
+<td colspan="1"></td>
+          <td colspan="2.0" rowspan="4" class="M8" > (Mod?) Questionnaire and Survey Design in Studying Corruption <span>Kostiuchenko</span></td>
+          
+          <td colspan="2.0" rowspan="4" class="M8" > New Developments in Rational Choice Theory <span>Liebig</span></td>
+          
+          <td colspan="2.0" rowspan="4" class="M8" > Qualitative analysis of experiences of displaced migrants in Europe <span>Teney</span></td>
+          <td colspan="1"></td><td colspan="1"></td><td colspan="1"></td></tr>
+<tr>
+<th>10:30</th>
+</tr>
+<tr>
+<th>11:00</th>
+</tr>
+<tr>
+<th>11:30</th>
+</tr>
+<tr>
+<th>12:00</th><td colspan="1"></td><td colspan="6"></td><td colspan="1"></td>
+          <td colspan="1.0" rowspan="4" class="M8" > Geschichte der empirischen Sozialforschung im internationalen Vergleich zwischen Deutschland und den USA <span>Gorges</span></td>
+          
+          <td colspan="1.0" rowspan="4" class="M8" > Climate Sociology <span>Kohl</span></td>
+          </tr>
+<tr>
+<th>12:30</th>
+</tr>
+<tr>
+<th>13:00</th>
+</tr>
+<tr>
+<th>13:30</th>
+</tr>
+<tr>
+<th>14:00</th>
+          <td colspan="1.0" rowspan="4" class="Colloquium" > Master Colloquium <span>Teney</span></td>
+          
+          <td colspan="3.0" rowspan="4" class="M8" > Sociology of the Arts  <span>von Scheve</span></td>
+          
+          <td colspan="3.0" rowspan="4" class="M8" > Sociology of Conspiracy Theories <span>Wunderlich</span></td>
+          <td colspan="1"></td><td colspan="1"></td><td colspan="1"></td></tr>
+<tr>
+<th>14:30</th>
+</tr>
+<tr>
+<th>15:00</th>
+</tr>
+<tr>
+<th>15:30</th>
+</tr>
+<tr>
+<th>16:00</th>
+          <td colspan="1.0" rowspan="4" class="Colloquium" > Social Structure & Survey-Methodology <span>Liebig</span></td>
+          
+          <td colspan="6.0" rowspan="4" class="Colloquium" > MA-Colloquium Sociology <span>Kohl</span></td>
+          
+          <td colspan="1.0" rowspan="4" class="Colloquium" > Colloquium <span>von Scheve</span></td>
+          <td colspan="1"></td><td colspan="1"></td></tr>
+<tr>
+<th>16:30</th>
+</tr>
+<tr>
+<th>17:00</th>
+</tr>
+<tr>
+<th>17:30</th>
+</tr>
+<tr>
+<th>18:00</th><td colspan="1"></td>
+          <td colspan="3.0" rowspan="4" class="Colloquium" > Research Colloquium Social Science <span>Kohl</span></td>
+          
+          <td colspan="3.0" rowspan="4" class="Colloquium" > Colloquium <span>Ohr</span></td>
+          <td colspan="1"></td><td colspan="1"></td><td colspan="1"></td></tr>
+<tr>
+<th>18:30</th>
+</tr>
+<tr>
+<th>19:00</th>
+</tr>
+<tr>
+<th>19:30</th>
+</tr></table></div></div></body>
