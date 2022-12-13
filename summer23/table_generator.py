@@ -101,7 +101,7 @@ html += "</table>"
 
 
 html += """<p> </p>
-<h2 style="break-before:always">Semester 4</h2>
+<h2 style="break-before:auto">Semester 4</h2>
 <table class="modultable">
 <caption  class="m8">Module 8: Specialisation</caption>
 <thead><tr>
