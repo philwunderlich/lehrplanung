@@ -65,7 +65,7 @@ for index,row in m4.iterrows():
 
 html += "</table>"
 
-html += """<table class="modultable">
+html += """<table class="modultable" style="break-before:auto">
 <caption class="m5">Module 5: Values and Culture from a European Comparative Perspective</caption>
 <thead><tr>
 <th>Title</th>
@@ -82,7 +82,7 @@ for index,row in m5.iterrows():
      html += f"<tr><td class='title-cell'>{row['Titel']}</td><td>{row['Dozent']}{dozent2}</td><td>{row['Tag']}</td><td>{int(row['Von'])}-{int(row['Bis'])}</td></tr>"
 html += "</table>"
 
-html += """<table class="modultable">
+html += """<table class="modultable" style="break-before:auto">
 <caption class="m6">Module 6: Globalization and Regional Development</caption>
 <thead><tr>
 <th>Title</th>
@@ -101,7 +101,7 @@ html += "</table>"
 
 
 html += """<p> </p>
-<h2 style="page-break-before:auto">Semester 4</h2>
+<h2 style="break-before:always">Semester 4</h2>
 <table class="modultable">
 <caption  class="m8">Module 8: Specialisation</caption>
 <thead><tr>
@@ -222,7 +222,7 @@ semester = 2
 semester2 = f"""<p> </p>
 <p> </p>
 <div class="timetable">
-<table style="page-break-before:auto">
+<table style="break-before:always">
 <caption>Semester {semester}</caption>
 <thead style="font-weight: bold;">
 <tr>
@@ -351,7 +351,7 @@ html += semester2
 # second table
 
 semester = 4
-semester4 = f"""<table style="page-break-before:auto">
+semester4 = f"""<table style="break-before:always">
 <caption>Semester {semester}</caption>
 <thead style="font-weight: bold;">
 <tr>
