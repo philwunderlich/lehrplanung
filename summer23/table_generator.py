@@ -57,7 +57,11 @@ html = f"""<meta http-equiv="content-type" content="text/html; charset=utf-8">
 </tr></thead>"""
 
 for index,row in m4.iterrows():
-     html += f"<tr><td class='title-cell'>{row['Titel']}</td><td>{row['Dozent']}</td><td>{row['Tag']}</td><td>{int(row['Von'])}-{int(row['Bis'])}</td></tr>"
+     if pd.notnull(row['Dozent2']):
+        dozent2 = f" & {row['Dozent2']}" 
+     else:
+        dozent2 = ""
+     html += f"<tr><td class='title-cell'>{row['Titel']}</td><td>{row['Dozent']}{dozent2}</td><td>{row['Tag']}</td><td>{int(row['Von'])}-{int(row['Bis'])}</td></tr>"
 
 html += "</table>"
 
@@ -71,7 +75,11 @@ html += """<table class="modultable">
 </tr></thead>"""
 
 for index,row in m5.iterrows():
-     html += f"<tr><td class='title-cell'>{row['Titel']}</td><td>{row['Dozent']}</td><td>{row['Tag']}</td><td>{int(row['Von'])}-{int(row['Bis'])}</td></tr>"
+     if pd.notnull(row['Dozent2']):
+        dozent2 = f" & {row['Dozent2']}" 
+     else:
+        dozent2 = ""
+     html += f"<tr><td class='title-cell'>{row['Titel']}</td><td>{row['Dozent']}{dozent2}</td><td>{row['Tag']}</td><td>{int(row['Von'])}-{int(row['Bis'])}</td></tr>"
 html += "</table>"
 
 html += """<table class="modultable">
@@ -84,7 +92,11 @@ html += """<table class="modultable">
 </tr></thead>"""
 
 for index,row in m6.iterrows():
-     html += f"<tr><td class='title-cell'>{row['Titel']}</td><td>{row['Dozent']}</td><td>{row['Tag']}</td><td>{int(row['Von'])}-{int(row['Bis'])}</td></tr>"
+     if pd.notnull(row['Dozent2']):
+        dozent2 = f" & {row['Dozent2']}" 
+     else:
+        dozent2 = ""
+     html += f"<tr><td class='title-cell'>{row['Titel']}</td><td>{row['Dozent']}{dozent2}</td><td>{row['Tag']}</td><td>{int(row['Von'])}-{int(row['Bis'])}</td></tr>"
 html += "</table>"
 
 
@@ -190,8 +202,12 @@ def timeslot(day, time, semester, data):
           # problem, beides gibt nicht die maximale zahl gleichzeitiger Überlappungen des Kurses an.
           # das ist übrigens auch ein Problem bei der definition der header breite. Wenn fünf kurse überlappen heißt das dennoch nicht, dass man 5 spalten braucht.
           colspan = daily_range / (j['overlaps']+1)
+          if pd.notnull(j['Dozent2']):
+               dozent2 = f" & {j['Dozent2']}"
+          else: 
+               dozent2 = ""
           string += f"""
-          <td colspan="{colspan}" rowspan="{rowspan}" class="{j['Modul']}" > {j['Titel']} <span>{j['Dozent']}</span></td>
+          <td colspan="{colspan}" rowspan="{rowspan}" class="{j['Modul']}" > {j['Titel']} <span>{j['Dozent']}{dozent2}</span></td>
           """
           counter_colspan += colspan
      if ((counter_colspan + counter_secondary) < daily_range):
