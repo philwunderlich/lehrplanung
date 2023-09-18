@@ -35,8 +35,14 @@ table {
 
   h2 {
       font-size: 1.2rem;
+      margin-top: 1.5rem;
   }
 
+  h3 {
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 0.4rem;
+}
 .title-cell {
     width: 70%;
 }
@@ -204,7 +210,6 @@ div.timetable table tr:nth-child(odd) {background: #FFF} */
 .semester-heading {
   display: flex;
   align-items: baseline;
-  margin-top: 2rem;
 }
 
 .semester-heading span {
