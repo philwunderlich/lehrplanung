@@ -1,2 +1,3 @@
+- [Winter Term 2023](/winter-term-22.html/html_lists.html)
 - [Summer Term 2023](/summer23/summer-term.html)
-- [Winter Term 2022](/winter-term-22.html)
+- [Winter Term 2022](/winter22/winter-term-22.html)
