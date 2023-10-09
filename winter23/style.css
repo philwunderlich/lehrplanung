@@ -152,7 +152,8 @@ div.timetable td.empty > span {
   }
   
 div.timetable table tbody tr td {
-  min-height: 60px;
+  /*min-height: 60px;*/
+  height: 75px;
 }
   
   div.timetable .m1 {background-color: #FF8A65;
