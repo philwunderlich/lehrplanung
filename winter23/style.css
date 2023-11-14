@@ -112,7 +112,7 @@ div.timetable  table {
     max-width: 100rem; 
     border: 1px solid lightgrey;
     border-collapse: separate;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 
   }
     
@@ -124,6 +124,9 @@ div.timetable  table {
   font-weight: normal;
   /* border-top: thin dotted #ccc; */
   }
+  div.timetable thead {
+	  font-size: 0.9rem;
+  }
   
   div.timetable  td {
   font-weight:600;
@@ -134,7 +137,7 @@ div.timetable  table {
   }
   
   div.timetable td > span {
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   font-weight: normal;
   display: block;
   width: 100%;
@@ -152,9 +155,18 @@ div.timetable td.empty > span {
   }
   
 div.timetable table tbody tr td {
-  min-height: 60px;
+  /*min-height: 60px;*/
+  height: 75px;
 }
-  
+
+div.timetable table tbody tr td a {
+	text-decoration-line: none;
+}
+
+div.timetable table tbody tr td a:hover {
+	text-decoration-line: underline;
+}
+
   div.timetable .m1 {background-color: #FF8A65;
     border-radius: 0.2rem;
   }
