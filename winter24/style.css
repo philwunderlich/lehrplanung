@@ -1,0 +1,236 @@
+@media print {
+body {
+    transform: scale(0.9);
+}
+}
+
+body {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+    min-height: 100vh;
+    padding: 4rem 0;
+    width: 100%;
+    font-family: -system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+div.content {
+    width: 960px;
+    margin: auto;
+    font-family: -system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+table {
+    width: 100%;
+    max-width: 100rem; 
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    font-size: 1.4rem
+  }
+
+  h2 {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 0.4rem;
+}
+.title-cell {
+    width: 70%;
+}
+
+th {
+    text-align: left;
+    border-bottom: 1px lightgray solid;
+    background-color: lightgray;
+}
+
+th, td {
+    padding: 2 2 2 2;
+    /* border-bottom: 1px lightgray solid; */
+}
+
+table.modultable tr:nth-child(even) {background: rgb(237, 237, 237)}
+table.modultable tr:nth-child(odd) {background: #FFF}
+
+caption {
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding-left: 2;
+    padding-bottom: 0.2rem;
+    text-align: center;
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+
+}
+
+.m1 {background-color: #FF8A65;
+}
+.m2 {background-color: #FFA726;
+}
+.m3 {background-color: #9CCC65;
+}
+.m4 {background-color: #FF8A65;
+}
+.m5 {background-color: #FFA726;
+}
+.m6 {background-color: #9CCC65;
+}
+.m7 {background-color: #fff172;
+}
+.m8 {background-color: #B3E5FC;
+}
+.m9 {background-color: #8d79f4;
+}
+.m10 {background-color: #fd6998;
+}
+
+td.empty span {
+    display: none;
+}
+
+td.empty a {
+    display: none;
+}
+
+
+div.timetable {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  
+div.timetable  table {
+    width: 100%;
+    table-layout:auto;
+    max-width: 100rem; 
+    border: 1px solid lightgrey;
+    border-collapse: separate;
+    font-size: 0.8rem;
+
+  }
+    
+  div.timetable th, div.timetable td {
+  padding: 0.3rem 0.3rem;
+  }
+  
+  div.timetable  th {
+  font-weight: normal;
+  /* border-top: thin dotted #ccc; */
+  }
+  div.timetable thead {
+	  font-size: 0.9rem;
+  }
+  
+  div.timetable  td {
+  font-weight:600;
+  line-height: 1.4;
+  border-radius: 0rem;
+  transition: opacity 0.3s ease;
+  border: 0;
+  }
+  
+  div.timetable td > span {
+  font-size: 0.7rem;
+  font-weight: normal;
+  display: block;
+  width: 100%;
+  }
+
+div.timetable td.empty > span {
+    display: none;
+}
+  
+  div.timetable  th {
+      /* border-top: 1px solid black; */
+      /* border-bottom: 1px solid black; */
+      background-color: lightgrey;
+      text-align: center;
+  }
+  
+div.timetable table tbody tr td {
+  /*min-height: 60px;*/
+  height: 75px;
+}
+
+div.timetable table tbody tr td a {
+	text-decoration-line: none;
+}
+
+div.timetable table tbody tr td a:hover {
+	text-decoration-line: underline;
+}
+
+  div.timetable .m1 {background-color: #FF8A65;
+    border-radius: 0.2rem;
+  }
+  div.timetable .m2 {background-color: #FFA726;
+    border-radius: 0.2rem;
+  }
+  div.timetable .m3 {background-color: #9CCC65;
+    border-radius: 0.2rem;
+  }
+  div.timetable .m4 {background-color: #FF8A65;
+      /* border: 1px solid black; */
+      border-radius: 0.2rem;
+  }
+  div.timetable .m5 {background-color: #FFA726;
+      /* border: 1px solid black; */
+      border-radius: 0.2rem;
+  }
+  div.timetable .m6 {background-color: #9CCC65;
+      /* border: 1px solid black; */
+      border-radius: 0.2rem;
+  }
+
+  div.timetable .m7 {background-color: #fff172;
+    /* border: 1px solid black; */
+    border-radius: 0.2rem;
+}
+  div.timetable .m8 {background-color: #B3E5FC;
+      /* border: 1px solid black; */
+      border-radius: 0.2rem;
+  }
+
+  div.timetable .m9 {background-color: #8d79f4;
+      /* border: 1px solid black; */
+      border-radius: 0.2rem;
+  }
+  div.timetable .m10 {background-color: #fd6998;
+      /* border: 1px solid black; */
+      border-radius: 0.2rem;
+  }
+  
+  div.timetable  caption {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      text-align: left;
+      border: none
+  }
+
+
+/* div.timetable table tr:nth-child(even) {background: rgb(237, 237, 237)}
+div.timetable table tr:nth-child(odd) {background: #FFF} */
+
+
+@page {
+    size: A4 landscape;
+    margin: 1cm;
+}
+
+.semester-heading {
+  display: flex;
+  align-items: baseline;
+}
+
+.semester-heading span {
+  padding-left: 1rem;
+}
